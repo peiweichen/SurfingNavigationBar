@@ -1,5 +1,5 @@
 # SurfingNavigationBar
-Easy way to manage UINavigationBar , implemented in swift
+Easy way to dynamically change UINavigationBar , implemented in swift2.2
 # What is it 
 This project is heavily inspired by [LTNavigationBar](https://github.com/ltebean/LTNavigationBar). SurfingNavigationBar provides you a chance to use pure Swift alternative in your next app.
 
@@ -8,12 +8,11 @@ This project is heavily inspired by [LTNavigationBar](https://github.com/ltebean
 ![alt tag](http://peiweichen.github.io/outofwebsite/gif/SurfingNavigationBar/translationY_nav.gif)
 ![alt tag](http://peiweichen.github.io/outofwebsite/gif/SurfingNavigationBar/all_nav.gif)
 
-
 # Usage
 
-### Warning:Check out demo app directly if you're too lazy to read 
-Firstly drag SurfingNavigationBar.swift into your project.
-The UINavigationBar Extension includes 4 methods to manage UINavigationBar's appearance
+Firstly drag` SurfingNavigationBar.swift` into your project.
+
+The `UINavigationBar Extension` includes 4 methods to manage UINavigationBar's appearance
 
 
 ```swift
@@ -32,9 +31,14 @@ override func viewWillDisappear(animated: Bool) {
 }
 ```
 
+I have implement the demo app that can help understand SurfingNavigationBar in a very swift and clear way,check out demo app for more details.
+
 # Mechanism:
 
 SurfingNavigationBar implement `self.setBackgroundImage(UIImage(), forBarMetrics: .Default)` which remove the original appearance of UINavigationBar and we add a `overlayView:UIView` on UINavigationBar in runtime.The color,alpha,transfromY of overlayView is the variables we're managing.
+
+# Requirements
+Xcode 7.3 , Swift 2.2
 
 Author
 ------
