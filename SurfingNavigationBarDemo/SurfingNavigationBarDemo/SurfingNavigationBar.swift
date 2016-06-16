@@ -9,20 +9,20 @@
 import UIKit
 
 extension UINavigationBar {
-    private struct overlayViewKeys {
-        static var DescriptiveName = "surfing_navigation_bar_overlay"
+    private struct SurfingNavigationBarConfigs {
+        static var overlayViewKey = "surfing_navigation_bar_overlay_key"
     }
     
     var overlayView: UIView? {
         get {
-            return objc_getAssociatedObject(self, &overlayViewKeys.DescriptiveName) as? UIView
+            return objc_getAssociatedObject(self, &SurfingNavigationBarConfigs.overlayViewKey) as? UIView
         }
         
         set {
             if let newValue = newValue {
                 objc_setAssociatedObject(
                     self,
-                    &overlayViewKeys.DescriptiveName,
+                    &SurfingNavigationBarConfigs.overlayViewKey,
                     newValue as UIView?,
                     .OBJC_ASSOCIATION_RETAIN_NONATOMIC
                 )
