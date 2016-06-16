@@ -30,6 +30,9 @@ class DemoViewController: UITableViewController {
         
         self.navigationController?.navigationBar.surfing_setBackgroundColor(UIColor.clearColor())
     }
+    
+
+
 
     override func scrollViewDidScroll(scrollView: UIScrollView) {
         

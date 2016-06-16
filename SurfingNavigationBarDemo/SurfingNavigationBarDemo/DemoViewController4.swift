@@ -33,10 +33,6 @@ class DemoViewController4: UITableViewController {
 
         
     }
-    override func viewWillDisappear(animated: Bool) {
-        super.viewWillDisappear(animated)
-        self.navigationController?.navigationBar.surfing_reset()
-    }
     
     override func scrollViewDidScroll(scrollView: UIScrollView) {
         

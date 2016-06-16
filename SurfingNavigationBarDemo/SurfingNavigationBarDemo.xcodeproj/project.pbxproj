@@ -62,7 +62,7 @@
 		F4D2206F1D1237B800CB6094 /* SurfingNavigationBarDemo */ = {
 			isa = PBXGroup;
 			children = (
-				F4D220821D1237F900CB6094 /* SurfingNavigationBar.swift */,
+				F4D220901D1267EE00CB6094 /* SurfingNavigationBar */,
 				F4D220841D12380F00CB6094 /* AppDelegate.swift */,
 				F4D220851D12380F00CB6094 /* DemoViewController.swift */,
 				F4D220861D12380F00CB6094 /* DemoViewController2.swift */,
@@ -74,6 +74,14 @@
 				F4D2207C1D1237B800CB6094 /* Info.plist */,
 			);
 			path = SurfingNavigationBarDemo;
+			sourceTree = "<group>";
+		};
+		F4D220901D1267EE00CB6094 /* SurfingNavigationBar */ = {
+			isa = PBXGroup;
+			children = (
+				F4D220821D1237F900CB6094 /* SurfingNavigationBar.swift */,
+			);
+			name = SurfingNavigationBar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -299,6 +307,7 @@
 				F4D220811D1237B800CB6094 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
